@@ -1,66 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Ubuntu:wght@300&display=swap');
+
+:root {
+    --main-color: yellow;
+    --second-color: black;
+    --font-family: 'Oswald', sans-serif;
+}
+
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    /* font family */
+    font-family: var(--font-family);
 }
 
 body {
-    background-color: aqua;
+    background: var(--main-color);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .box {
     width: 400px;
-    height: 300px;
+    height: 370px;
+    padding: 40px;
+    background-color: black;
+    color: yellow;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-content: center;
-    border: 1px solid black;
-    padding: 40px;
+
 }
 
 .firstfield {
-    
+    margin-top: 5%;
     display: flex;
     justify-content: space-around;
 
 }
 
 .secondfield {
-    margin-top: 40px;
+    margin-top: 25%;
     display: flex;
     justify-content: space-around;
 
 }
 
 .fieldresponse {
-    margin-top: 40px;
+    margin-top: 15%;
     display: flex;
     justify-content: space-around;
 
 }
 
-input {
-    background-color: aqua;
-    width: 6rem;
-    height: 2rem;
-    border-radius: 5px;
+imput::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
-.button {
+.form {
+
+    background: transparent;
+    color: var(--main-color);
+    outline: 0;
+    padding-left: 15px;
     width: 6rem;
     height: 2rem;
-    border-radius: 7px;
-    cursor: pointer;
+    border: none;
+    fill: none;
+    font-size: 18px;
+    border-bottom: 1px solid var(--main-color);
+    margin-bottom: 16px;
+
 }
-.response {
-    width: 6rem;
-    height: 2rem;
-    border: 1px solid black;
-    border-radius: 5px;
-    text-align: center;
+
+.calc {
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    color: var(--main-color);
+    background: var(--second-color);
+    cursor: pointer;
+    border: 2px solid var(--main-color);
+    padding: 5px;
 }

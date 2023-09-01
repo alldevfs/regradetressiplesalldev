@@ -39,21 +39,20 @@ body {
     margin-top: 5%;
     display: flex;
     justify-content: space-around;
-
+    align-items: center;
 }
 
 .secondfield {
     margin-top: 25%;
     display: flex;
     justify-content: space-around;
-
+    align-items: center;
 }
 
 .fieldresponse {
     margin-top: 15%;
     display: flex;
     justify-content: space-around;
-
 }
 
 imput::-webkit-outer-spin-button,
@@ -63,7 +62,6 @@ input::-webkit-inner-spin-button {
 }
 
 .form {
-
     background: transparent;
     color: var(--main-color);
     outline: 0;

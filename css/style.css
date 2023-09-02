@@ -6,6 +6,7 @@
     --font-family: 'Oswald', sans-serif;
 }
 
+
 * {
     padding: 0%;
     margin: 0%;
@@ -15,6 +16,7 @@
 
 body {
     background: var(--main-color);
+    width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -26,46 +28,50 @@ body {
     width: 400px;
     height: 370px;
     padding: 40px;
-    background-color: black;
-    color: yellow;
+    background-color: var(--second-color);
+    color: var(--main-color);
     border-radius: 15px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    align-content: center;
+    gap: 35px;
 
 }
 
 .firstfield {
-    margin-top: 5%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 0px 30px;
+
 }
 
 .secondfield {
-    margin-top: 25%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 0px 30px;
 }
 
 .fieldresponse {
-    margin-top: 15%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 90px;
 }
 
 imput::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    margin: 0;
+    /* margin: 0; */
 }
 
 .form {
     background: transparent;
     color: var(--main-color);
     outline: 0;
-    padding-left: 15px;
+    text-align: center;
     width: 6rem;
     height: 2rem;
     border: none;
@@ -76,13 +82,22 @@ input::-webkit-inner-spin-button {
 
 }
 
+span {
+    text-align: center;
+    width: 100px;
+    color: var(--main-color);
+    background: var(--second-color);
+    cursor: pointer;
+    /* gap: 0px 30px; */
+
+}
+
 .calc {
-    padding: 10px;
     width: 100px;
     border-radius: 10px;
     color: var(--main-color);
     background: var(--second-color);
     cursor: pointer;
     border: 2px solid var(--main-color);
-    padding: 5px;
+    padding: 7px;
 }

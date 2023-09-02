@@ -4,29 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Regra de três simples</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
 
     <div class="box">
+        <h2>Regra de 3 Simples</h2>
         <div class="firstfield">
             <!-- <label for="firstfield">1º valor</label> -->
-            <input type="number" name="firstvalue" class="firstform form" />
+            <input type="number" name="firstvalue" class="firstform form" required />
             <label for="">está para</label>
             <!-- <label for="secondvalue">2º valor</label> -->
-            <input type="number" name="secondvalue" class="secondform form" />
+            <input type="number" name="secondvalue" class="secondform form" required />
         </div>
         <div class="secondfield">
             <!-- <label for="thirdfield">este valor</label> -->
-            <input type="number" name="thirdvalue" class="thirdform form" />
+            <input type="number" name="thirdvalue" class="thirdform form" required />
             <label for="">está para</label>
             <!-- <label for="forthvalue">este valor</label> -->
-            <input type="number" name="forthvalue" class="forthform form" />
+            <input type="text" name="response" class="response form" placeholder="X" disabled />
         </div>
         <div class="fieldresponse">
-            <input type="button" class="calc" value="Calcular" />
+            <input type="submit" class="calc" value="Calcular" />
+            <span class="material-symbols-outlined reload">
+                restart_alt
+            </span>
         </div>
     </div>
     <script src="./js/script.js"></script>
